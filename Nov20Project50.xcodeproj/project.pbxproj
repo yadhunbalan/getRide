@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D68E7A51E48D9BB002D4D31 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D68E7A41E48D9BB002D4D31 /* MapKit.framework */; };
+		2D8D04C01E7077A3001F3FCC /* rideHistoryDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8D04BF1E7077A3001F3FCC /* rideHistoryDetails.m */; };
+		2D9500CB1E5DF03A00A5FFC9 /* searchRide.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9500CA1E5DF03A00A5FFC9 /* searchRide.m */; };
+		2D9500CE1E6268CA00A5FFC9 /* detailpage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9500CD1E6268CA00A5FFC9 /* detailpage.m */; };
+		2D9500D11E626EF400A5FFC9 /* tableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9500D01E626EF400A5FFC9 /* tableView.m */; };
+		2D9500D41E62FBB700A5FFC9 /* offerRide.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9500D31E62FBB700A5FFC9 /* offerRide.m */; };
+		2D9500D71E6B9DC200A5FFC9 /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9500D61E6B9DC200A5FFC9 /* Profile.m */; };
+		2D9500DA1E6BC01300A5FFC9 /* ChangePasswordInAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9500D91E6BC01300A5FFC9 /* ChangePasswordInAccount.m */; };
+		2D9500DD1E6BDD9300A5FFC9 /* rideHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9500DC1E6BDD9300A5FFC9 /* rideHistory.m */; };
 		3F5F43171DE1E5D2002E4C24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F43161DE1E5D2002E4C24 /* main.m */; };
 		3F5F431A1DE1E5D2002E4C24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F43191DE1E5D2002E4C24 /* AppDelegate.m */; };
 		3F5F431D1DE1E5D2002E4C24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F431C1DE1E5D2002E4C24 /* ViewController.m */; };
@@ -15,6 +24,11 @@
 		3F5F43251DE1E5D2002E4C24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5F43231DE1E5D2002E4C24 /* LaunchScreen.storyboard */; };
 		3F5F43301DE1E5D2002E4C24 /* Nov20Project50Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F432F1DE1E5D2002E4C24 /* Nov20Project50Tests.m */; };
 		3F5F433B1DE1E5D2002E4C24 /* Nov20Project50UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F433A1DE1E5D2002E4C24 /* Nov20Project50UITests.m */; };
+		3F5F434A1DE1F1A1002E4C24 /* UserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F43491DE1F1A1002E4C24 /* UserProfile.m */; };
+		3FE020A51DEB3FDC0015C6AB /* changePassword.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE020A41DEB3FDC0015C6AB /* changePassword.m */; };
+		3FE020A81DEB5F1D0015C6AB /* passwordChangeStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE020A71DEB5F1D0015C6AB /* passwordChangeStatus.m */; };
+		3FE020AB1DEB67CD0015C6AB /* Registration.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE020AA1DEB67CD0015C6AB /* Registration.m */; };
+		3FE020AE1DEB6C970015C6AB /* registerStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE020AD1DEB6C970015C6AB /* registerStatus.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +49,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D68E7A41E48D9BB002D4D31 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2D8D04BE1E7077A3001F3FCC /* rideHistoryDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rideHistoryDetails.h; sourceTree = "<group>"; };
+		2D8D04BF1E7077A3001F3FCC /* rideHistoryDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rideHistoryDetails.m; sourceTree = "<group>"; };
+		2D9500C91E5DF03A00A5FFC9 /* searchRide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = searchRide.h; sourceTree = "<group>"; };
+		2D9500CA1E5DF03A00A5FFC9 /* searchRide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = searchRide.m; sourceTree = "<group>"; };
+		2D9500CC1E6268CA00A5FFC9 /* detailpage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detailpage.h; sourceTree = "<group>"; };
+		2D9500CD1E6268CA00A5FFC9 /* detailpage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detailpage.m; sourceTree = "<group>"; };
+		2D9500CF1E626EF400A5FFC9 /* tableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tableView.h; sourceTree = "<group>"; };
+		2D9500D01E626EF400A5FFC9 /* tableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tableView.m; sourceTree = "<group>"; };
+		2D9500D21E62FBB700A5FFC9 /* offerRide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = offerRide.h; sourceTree = "<group>"; };
+		2D9500D31E62FBB700A5FFC9 /* offerRide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = offerRide.m; sourceTree = "<group>"; };
+		2D9500D51E6B9DC200A5FFC9 /* Profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
+		2D9500D61E6B9DC200A5FFC9 /* Profile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profile.m; sourceTree = "<group>"; };
+		2D9500D81E6BC01300A5FFC9 /* ChangePasswordInAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasswordInAccount.h; sourceTree = "<group>"; };
+		2D9500D91E6BC01300A5FFC9 /* ChangePasswordInAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordInAccount.m; sourceTree = "<group>"; };
+		2D9500DB1E6BDD9300A5FFC9 /* rideHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rideHistory.h; sourceTree = "<group>"; };
+		2D9500DC1E6BDD9300A5FFC9 /* rideHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rideHistory.m; sourceTree = "<group>"; };
 		3F5F43121DE1E5D2002E4C24 /* Nov20Project50.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nov20Project50.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5F43161DE1E5D2002E4C24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3F5F43181DE1E5D2002E4C24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +82,16 @@
 		3F5F43361DE1E5D2002E4C24 /* Nov20Project50UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Nov20Project50UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5F433A1DE1E5D2002E4C24 /* Nov20Project50UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Nov20Project50UITests.m; sourceTree = "<group>"; };
 		3F5F433C1DE1E5D2002E4C24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F5F43481DE1F1A1002E4C24 /* UserProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserProfile.h; sourceTree = "<group>"; };
+		3F5F43491DE1F1A1002E4C24 /* UserProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfile.m; sourceTree = "<group>"; };
+		3FE020A31DEB3FDC0015C6AB /* changePassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = changePassword.h; sourceTree = "<group>"; };
+		3FE020A41DEB3FDC0015C6AB /* changePassword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = changePassword.m; sourceTree = "<group>"; };
+		3FE020A61DEB5F1D0015C6AB /* passwordChangeStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = passwordChangeStatus.h; sourceTree = "<group>"; };
+		3FE020A71DEB5F1D0015C6AB /* passwordChangeStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = passwordChangeStatus.m; sourceTree = "<group>"; };
+		3FE020A91DEB67CD0015C6AB /* Registration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Registration.h; sourceTree = "<group>"; };
+		3FE020AA1DEB67CD0015C6AB /* Registration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Registration.m; sourceTree = "<group>"; };
+		3FE020AC1DEB6C970015C6AB /* registerStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = registerStatus.h; sourceTree = "<group>"; };
+		3FE020AD1DEB6C970015C6AB /* registerStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = registerStatus.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D68E7A51E48D9BB002D4D31 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +120,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D68E7A31E48D9BA002D4D31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D68E7A41E48D9BB002D4D31 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3F5F43091DE1E5D2002E4C24 = {
 			isa = PBXGroup;
 			children = (
+				2D9500D21E62FBB700A5FFC9 /* offerRide.h */,
+				2D9500D31E62FBB700A5FFC9 /* offerRide.m */,
+				2D9500CF1E626EF400A5FFC9 /* tableView.h */,
+				2D9500D01E626EF400A5FFC9 /* tableView.m */,
+				2D9500CC1E6268CA00A5FFC9 /* detailpage.h */,
+				2D9500CD1E6268CA00A5FFC9 /* detailpage.m */,
 				3F5F43141DE1E5D2002E4C24 /* Nov20Project50 */,
 				3F5F432E1DE1E5D2002E4C24 /* Nov20Project50Tests */,
 				3F5F43391DE1E5D2002E4C24 /* Nov20Project50UITests */,
 				3F5F43131DE1E5D2002E4C24 /* Products */,
+				2D68E7A31E48D9BA002D4D31 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,10 +163,30 @@
 				3F5F431B1DE1E5D2002E4C24 /* ViewController.h */,
 				3F5F431C1DE1E5D2002E4C24 /* ViewController.m */,
 				3F5F431E1DE1E5D2002E4C24 /* Main.storyboard */,
+				2D8D04BE1E7077A3001F3FCC /* rideHistoryDetails.h */,
+				2D8D04BF1E7077A3001F3FCC /* rideHistoryDetails.m */,
+				2D9500DB1E6BDD9300A5FFC9 /* rideHistory.h */,
+				2D9500DC1E6BDD9300A5FFC9 /* rideHistory.m */,
+				2D9500D81E6BC01300A5FFC9 /* ChangePasswordInAccount.h */,
+				2D9500D91E6BC01300A5FFC9 /* ChangePasswordInAccount.m */,
+				2D9500D51E6B9DC200A5FFC9 /* Profile.h */,
+				2D9500D61E6B9DC200A5FFC9 /* Profile.m */,
+				2D9500C91E5DF03A00A5FFC9 /* searchRide.h */,
+				2D9500CA1E5DF03A00A5FFC9 /* searchRide.m */,
 				3F5F43211DE1E5D2002E4C24 /* Assets.xcassets */,
 				3F5F43231DE1E5D2002E4C24 /* LaunchScreen.storyboard */,
 				3F5F43261DE1E5D2002E4C24 /* Info.plist */,
 				3F5F43151DE1E5D2002E4C24 /* Supporting Files */,
+				3F5F43481DE1F1A1002E4C24 /* UserProfile.h */,
+				3F5F43491DE1F1A1002E4C24 /* UserProfile.m */,
+				3FE020A31DEB3FDC0015C6AB /* changePassword.h */,
+				3FE020A41DEB3FDC0015C6AB /* changePassword.m */,
+				3FE020A61DEB5F1D0015C6AB /* passwordChangeStatus.h */,
+				3FE020A71DEB5F1D0015C6AB /* passwordChangeStatus.m */,
+				3FE020A91DEB67CD0015C6AB /* Registration.h */,
+				3FE020AA1DEB67CD0015C6AB /* Registration.m */,
+				3FE020AC1DEB6C970015C6AB /* registerStatus.h */,
+				3FE020AD1DEB6C970015C6AB /* registerStatus.m */,
 			);
 			path = Nov20Project50;
 			sourceTree = "<group>";
@@ -270,9 +347,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D9500D41E62FBB700A5FFC9 /* offerRide.m in Sources */,
+				3F5F434A1DE1F1A1002E4C24 /* UserProfile.m in Sources */,
+				2D9500CE1E6268CA00A5FFC9 /* detailpage.m in Sources */,
 				3F5F431D1DE1E5D2002E4C24 /* ViewController.m in Sources */,
+				2D9500DD1E6BDD9300A5FFC9 /* rideHistory.m in Sources */,
+				3FE020AB1DEB67CD0015C6AB /* Registration.m in Sources */,
+				3FE020A51DEB3FDC0015C6AB /* changePassword.m in Sources */,
+				3FE020AE1DEB6C970015C6AB /* registerStatus.m in Sources */,
+				2D9500D11E626EF400A5FFC9 /* tableView.m in Sources */,
+				2D9500D71E6B9DC200A5FFC9 /* Profile.m in Sources */,
 				3F5F431A1DE1E5D2002E4C24 /* AppDelegate.m in Sources */,
+				2D8D04C01E7077A3001F3FCC /* rideHistoryDetails.m in Sources */,
+				3FE020A81DEB5F1D0015C6AB /* passwordChangeStatus.m in Sources */,
+				2D9500DA1E6BC01300A5FFC9 /* ChangePasswordInAccount.m in Sources */,
 				3F5F43171DE1E5D2002E4C24 /* main.m in Sources */,
+				2D9500CB1E5DF03A00A5FFC9 /* searchRide.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +586,7 @@
 				3F5F43411DE1E5D2002E4C24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F5F43421DE1E5D2002E4C24 /* Build configuration list for PBXNativeTarget "Nov20Project50Tests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +595,7 @@
 				3F5F43441DE1E5D2002E4C24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F5F43451DE1E5D2002E4C24 /* Build configuration list for PBXNativeTarget "Nov20Project50UITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +604,7 @@
 				3F5F43471DE1E5D2002E4C24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
