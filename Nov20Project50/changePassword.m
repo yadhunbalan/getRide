@@ -7,7 +7,7 @@
 //
 
 #import "changePassword.h"
-#import "passwordChangeStatus.h"
+
 
 @interface changePassword ()
 
@@ -35,25 +35,53 @@
     // Pass the selected object to the new view controller.
 }
 */
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if ([segue.identifier isEqualToString:@"passwordchnagestatus"]) {
-        
-        NSLog(@"UserProfile");
-        passwordChangeStatus *passchange=(passwordChangeStatus *) segue.destinationViewController;
-        passchange.username=self.uname;
-        passchange.password=confirmpassword.text;
-    }
-}
+
 
 
 
 - (IBAction)changepassword:(id)sender {
+        NSString *url=[NSString stringWithFormat:@"http://localhost:8080/RideShare/mobile/rideshare/validateuser/%1$@&%2$@",self.uname,useremail.text];
+    NSLog(@"%@", url);
+    
+    NSURLSession *mysession=[NSURLSession sharedSession];
+    [[mysession dataTaskWithURL:[NSURL URLWithString:url]completionHandler:^(NSData * data, NSURLResponse * response, NSError * error) {
+        NSLog(@"Inside url");
+        if(data.length>0 && error==nil) {
+            NSLog(@"Fetching json object");
+            NSDictionary *mymainjsonobject=[NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
+            
+            self.status=[mymainjsonobject objectForKey:@"Status"];
+        }
+    }]resume];
+    if([self.status isEqualToString:@"success"]){
     
     if(newpassword.text!=NULL&&confirmpassword.text!=NULL){
         NSString *newpass=newpassword.text;
         NSString *confpass=confirmpassword.text;
         if([newpass isEqual:confpass]){
-            [self performSegueWithIdentifier:@"passwordchnagestatus" sender:self];
+            NSString *account_url=[NSString stringWithFormat:@"http://localhost:8080/RideShare/mobile/rideshare/passwordChange/%1@&%2@",self.uname,newpass];
+            NSLog(@"%@",account_url);
+            //[[UIApplication sharedApplication] openURL:account_url];
+            
+            NSURLSession *mysession=[NSURLSession sharedSession];
+            [[mysession dataTaskWithURL:[NSURL URLWithString:account_url]completionHandler:^(NSData * data, NSURLResponse * response, NSError * error) {
+                NSLog(@"Inside url");
+            }
+              ]resume];
+            
+            
+        
+            UIAlertController * alert= [UIAlertController alertControllerWithTitle:@"Alert"
+                                                                           message:@"Password Changed" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *
+            defaultAction = [ UIAlertAction actionWithTitle
+                             :@"OK" style :
+                             UIAlertActionStyleDefault
+                             handler:^(UIAlertAction * action )
+                             {}];
+            [alert addAction :
+             defaultAction ];
+            [ self presentViewController : alert animated: YES completion : nil ];
            
 
         }
@@ -90,8 +118,22 @@
         
     }
 }
+    else{
+        UIAlertController * alert= [UIAlertController alertControllerWithTitle:@"Alert"
+                                                                       message:@"Enter correct email to verify user" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *
+        defaultAction = [ UIAlertAction actionWithTitle
+                         :@"OK" style :
+                         UIAlertActionStyleDefault
+                         handler:^(UIAlertAction * action )
+                         {}];
+        [alert addAction :
+         defaultAction ];
+        [ self presentViewController : alert animated: YES completion : nil ];
+        
+    }
 
 
-
+}
 
 @end

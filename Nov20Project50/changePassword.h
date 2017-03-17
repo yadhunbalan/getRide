@@ -13,10 +13,12 @@
     IBOutlet UILabel *username;
     IBOutlet UITextField *newpassword;
     IBOutlet UITextField *confirmpassword;
+    IBOutlet UITextField *useremail;
 }
 - (IBAction)changepassword:(id)sender;
 
 @property (strong, nonatomic) NSString *uname;
+@property (strong, nonatomic) NSString *status;
 
 
 @end

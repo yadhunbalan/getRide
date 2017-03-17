@@ -15,7 +15,10 @@
     IBOutlet UITextField *price;
     IBOutlet UITextField *seats;
     IBOutlet UITextField *description;
+    IBOutlet UIDatePicker *dateofRide;
 }
+- (IBAction)datePicker:(id)sender;
+@property(nonatomic,retain) NSString *rideDate;
 - (IBAction)addRide:(id)sender;
 
 @end

@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface rideHistoryDetails : UIViewController
+@interface rideHistoryDetails : UIViewController<UITableViewDataSource,UITableViewDelegate>{
+    
+}
 
 
 @property(nonatomic,strong) NSString *r_id;
+@property(nonatomic,strong) NSArray *name;
 @end
+
